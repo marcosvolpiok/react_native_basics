@@ -17,6 +17,13 @@ import {
           title="Go to Detail"
           onPress={() => navigation.navigate('Details')}
         />
+
+        <Button
+          title="Go to Site List"
+          onPress={() => navigation.navigate('Site')}
+        />
+
+        
       </View>
     );
   }

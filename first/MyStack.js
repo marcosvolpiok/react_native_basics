@@ -4,6 +4,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 
 import HomeScreen from './HomeScreen';
 import ProfileScreen from './ProfileScreen';
+import SiteScreen from './SiteScreen';
 
 
 
@@ -19,6 +20,9 @@ const MyStack = () => {
           options={{ title: 'Welcome' }}
         />
         <Stack.Screen name="Profile" component={ProfileScreen} />
+        <Stack.Screen name="Site" component={SiteScreen} />
+        
+        
       </Stack.Navigator>
     </NavigationContainer>
   );
