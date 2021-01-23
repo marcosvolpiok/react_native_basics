@@ -8,6 +8,8 @@ import SiteScreen from './SiteScreen';
 
 
 
+
+
 const Stack = createStackNavigator();
 
 const MyStack = () => {
@@ -21,6 +23,7 @@ const MyStack = () => {
         />
         <Stack.Screen name="Profile" component={ProfileScreen} />
         <Stack.Screen name="Site" component={SiteScreen} />
+        
         
         
       </Stack.Navigator>

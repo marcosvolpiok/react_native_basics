@@ -5,7 +5,7 @@ import HomeScreen from './HomeScreen';
 import DetailsScreen from './DetailsScreen';
 import SiteScreen from './SiteScreen';
 import { createStackNavigator } from '@react-navigation/stack';
-
+import EditSite from './EditSite';
 
 
 function App() {
@@ -18,7 +18,8 @@ function App() {
         <Stack.Screen name="Home" component={HomeScreen} />
         <Stack.Screen name="Details" component={DetailsScreen} />
         <Stack.Screen name="Site" component={SiteScreen} />
-        
+        <Stack.Screen name="EditSite" component={EditSite} />
+
       </Stack.Navigator>
     </NavigationContainer>
   );

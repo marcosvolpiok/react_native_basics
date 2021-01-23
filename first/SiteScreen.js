@@ -32,11 +32,11 @@ class SiteScreen extends React.Component {
             <Text>Sites</Text>
 
             {this.state.sites.map((site) => (
-              <View>
+              <View key={site._id}>
                 <Text>{site.name}</Text>
                 <Button
                   title="Edit"
-                  onPress={() => navigation.navigate('Details')}
+                  onPress={() => navigation.navigate('EditSite', {id: site._id})}
                 />
               </View>
             ))}
