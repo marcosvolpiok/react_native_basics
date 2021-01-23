@@ -68,6 +68,7 @@ class EditSite extends React.Component {
   }
 
     async handleClick () {
+      const { navigation } = this.props; 
       console.log('Submit!... ', this.state);
       
       const response = await fetch(`http://192.168.0.233:4000/sites/update/${this.state.id}`, {
@@ -84,6 +85,8 @@ class EditSite extends React.Component {
           }) 
           // body data type must match "Content-Type" header
       });
+
+      navigation.navigate('Site');
       
     }
 
